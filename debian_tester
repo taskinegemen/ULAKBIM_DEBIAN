@@ -1,0 +1,3 @@
+#!/bin/bash
+version=`awk '/Version: (.+)/{print $2}' zkitapeditoru/DEBIAN/control`;
+sudo dpkg -i VERSIONS/zkitapeditoru-$version.deb
