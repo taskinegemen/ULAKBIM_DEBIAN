@@ -1,6 +1,9 @@
 #!/bin/bash
-rm *.deb
-dpkg-deb --build zkitapeditoru
+if [ ! -d "VERSIONS" ]; then
+   mkdir VERSIONS;
+fi
+rm -f *.deb;
+dpkg-deb --build zkitapeditoru;
 version=`awk '/Version: (.+)/{print $2}' zkitapeditoru/DEBIAN/control`;
-mv zkitapeditoru.deb ./VERSIONS/zkitapeditoru-$version.deb
+mv zkitapeditoru.deb ./VERSIONS/zkitapeditoru-$version.deb;
 
