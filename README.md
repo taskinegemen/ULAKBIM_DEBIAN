@@ -28,9 +28,23 @@ mysql-server(>=5.5.0),
 
 mysql-client(>=5.5.0),
 
-imagemagick(>=7.7.10),
+imagemagick(>=8:6.7),
 
 poppler-utils(>=0.18.0),
 
 libpodofo-utils(>=0.9.0),
+
+pdftk(>=1.44),
+
+zip(>=3.0),
+
+unzip(>=6.0),
+
+wkhtmltopdf(>0.9.9),
+
+xvfb(>=2:1.12),
+
+ghostscript(>=9.05),
+
+
 
