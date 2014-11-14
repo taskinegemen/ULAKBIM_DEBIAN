@@ -32,3 +32,5 @@ imagemagick(>=7.7.10),
 
 poppler-utils(>=0.18.0),
 
+libpodofo-utils(>=0.9.0),
+
