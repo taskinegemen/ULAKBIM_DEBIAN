@@ -26,5 +26,7 @@ php5-mcrypt(>=5.4.0),
 
 mysql-server(>=5.5.0),
 
-mysql-client(>=5.5.0)
+mysql-client(>=5.5.0),
+
+imagemagick(>=7.7.10),
 
