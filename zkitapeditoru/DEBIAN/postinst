@@ -1,2 +1,8 @@
 #!/bin/bash
-echo "Bu bir yükleme sonrası çalışan scripttir"
+echo "APACHE konfigürasyonları yapılıyor...";
+a2enmod headers;
+cp /tmp/APACHE/zkitapeditoru_apache.conf /etc/apache2/sites-available/zkitapeditoru_apache.conf;
+echo "127.0.0.1	zkitapeditoru.com" >> /etc/hosts;
+a2ensite zkitapeditoru_apache.conf;
+service apache2 reload;
+service apache2 restart;
