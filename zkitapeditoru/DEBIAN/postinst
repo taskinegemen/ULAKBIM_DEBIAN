@@ -20,4 +20,10 @@ if ["$nodejs" == ""]; then
 	make install > /dev/null;
 fi
 
+npm=`which npm`;
+if ["$npm" == ""]; then
+        npm config set registry http://registry.npmjs.org/;
+        npm install -g socket.io;
+fi
+
 
