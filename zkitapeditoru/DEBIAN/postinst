@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "APACHE konfigürasyonları yapılıyor...";
 a2enmod headers;
+a2enmod rewrite;
 cp /tmp/APACHE/zkitapeditoru_apache.conf /etc/apache2/sites-available/zkitapeditoru_apache.conf;
 echo "127.0.0.1	zkitapeditoru.com" >> /etc/hosts;
 a2ensite zkitapeditoru_apache.conf;
