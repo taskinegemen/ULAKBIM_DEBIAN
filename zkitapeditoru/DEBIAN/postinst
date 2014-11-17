@@ -12,5 +12,12 @@ echo "MYSQL konfigürasyonları yapılandırılıyor..."
 mysql -u root -p</tmp/MYSQL/ulakbim_editor.sql 
 
 echo "NODEJS kuruluyor...";
-cd /tmp/NODEJS/node-v0.10.33;
-./configure && make && sudo make install;
+nodejs=`which nodejs`;
+if ["$nodejs" == ""]; then
+	cd /tmp/NODEJS/node-v0.10.33;
+	./configure > /dev/null;
+	make > /dev/null;
+	make install > /dev/null;
+fi
+
+

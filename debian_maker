@@ -3,6 +3,10 @@ if [ ! -d "VERSIONS" ]; then
    mkdir VERSIONS;
 fi
 
+if [ ! -d "VERSIONS" ]; then
+   mkdir VERSIONS;
+fi
+
 if [ ! -d "zkitapeditoru/var/www/zkitapeditoru" ]; then
    mkdir -p zkitapeditoru/var/www/zkitapeditoru;
 fi
