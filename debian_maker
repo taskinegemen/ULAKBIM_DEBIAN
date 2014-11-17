@@ -2,6 +2,10 @@
 if [ ! -d "VERSIONS" ]; then
    mkdir VERSIONS;
 fi
+
+if [ ! -d "zkitapeditoru/var/www/zkitapeditoru" ]; then
+   mkdir -p zkitapeditoru/var/www/zkitapeditoru;
+fi
 rm -f *.deb;
 dpkg-deb --build zkitapeditoru;
 version=`awk '/Version: (.+)/{print $2}' zkitapeditoru/DEBIAN/control`;
