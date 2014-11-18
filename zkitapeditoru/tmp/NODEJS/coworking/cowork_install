@@ -1,6 +1,6 @@
 
 #!/bin/bash
-directory="/var/www/cowork/";
+directory="/var/www/coworking/";
 
 if [ ! -d $directory ]; then
     mkdir -p $directory
