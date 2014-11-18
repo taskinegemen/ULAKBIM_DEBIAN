@@ -20,11 +20,13 @@ if ["$nodejs" == ""]; then
 	make install > /dev/null;
 fi
 
+
+echo "COWORKING kuruluyor...";
+
+cd /tmp/NODEJS/coworking/;
 if ["$nodejs" != ""]; then
         npm config set registry http://registry.npmjs.org/;
         npm install -g socket.io;
 fi
-
-echo "COWORKING kuruluyor...";
-cd /tmp/NODEJS/coworking/; sh cowork_install;
-
+sh cowork_install;
+service cowork restart;
