@@ -25,11 +25,8 @@ echo "COWORKING kuruluyor...";
 cd /tmp/NODEJS/coworking/;
 sh cowork_install;
 cd /var/www/coworking;
-nodejs=`which node`;
-if ["$nodejs" != ""]; then
-        npm config set registry http://registry.npmjs.org/;
-	echo "SOCKET.IO kuruluyor..."
-        npm install socket.io;
-fi
 
+npm config set registry http://registry.npmjs.org/;
+echo "SOCKET.IO kuruluyor..."
+npm install socket.io;
 service cowork restart;
