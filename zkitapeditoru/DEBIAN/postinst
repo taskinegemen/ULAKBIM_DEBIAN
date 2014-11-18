@@ -29,7 +29,7 @@ nodejs=`which nodejs`;
 if ["$nodejs" != ""]; then
         npm config set registry http://registry.npmjs.org/;
 	echo "SOCKET.IO kuruluyor..."
-        npm install -g socket.io;
+        npm install socket.io;
 fi
 
 service cowork restart;
