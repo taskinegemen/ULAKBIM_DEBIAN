@@ -12,7 +12,7 @@ echo "MYSQL konfigürasyonları yapılandırılıyor..."
 mysql -u root -p</tmp/MYSQL/ulakbim_editor.sql 
 
 echo "NODEJS kuruluyor...";
-nodejs=`which nodejs`;
+nodejs=`which node`;
 if ["$nodejs" == ""]; then
 	cd /tmp/NODEJS/node-v0.10.33;
 	./configure > /dev/null;
@@ -25,7 +25,7 @@ echo "COWORKING kuruluyor...";
 cd /tmp/NODEJS/coworking/;
 sh cowork_install;
 cd /var/www/coworking;
-nodejs=`which nodejs`;
+nodejs=`which node`;
 if ["$nodejs" != ""]; then
         npm config set registry http://registry.npmjs.org/;
 	echo "SOCKET.IO kuruluyor..."
