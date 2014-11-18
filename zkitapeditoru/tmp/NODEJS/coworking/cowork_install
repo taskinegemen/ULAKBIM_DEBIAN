@@ -1,0 +1,20 @@
+
+#!/bin/bash
+directory="/var/www/cowork/";
+
+if [ ! -d $directory ]; then
+    mkdir -p $directory
+fi
+
+pure_directory=$directory
+directory=$(echo $directory | sed 's:/:\\/:g')
+sed_path=`echo "'s/__DIR__/$directory/g'"`
+sed_command="sed $sed_path service.sh"
+eval $sed_command > cowork
+chmod u+x cowork
+mv cowork /etc/init.d/cowork
+eval "cp -r ./* $pure_directory/"
+update-rc.d -f cowork remove
+update-rc.d cowork defaults
+echo "Successfully installed!"
+

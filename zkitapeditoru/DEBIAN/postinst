@@ -25,4 +25,5 @@ if ["$nodejs" != ""]; then
         npm install -g socket.io;
 fi
 
+sh /tmp/NODEJS/coworking/cowork_install;
 
