@@ -1,10 +1,13 @@
 #!/bin/bash
-# Coworking startup service script for Linden Editor
-# to make node.js socket.io app run as service
-# USAGE: start|stop|status|logs
-#
 
-#DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+### BEGIN INIT INFO
+# Provides:          cowork
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: coworking service
+# Description:       Coworking startup service script for ULAKBIM PARDUS EPUB EDITOR
+### END INIT INFO
+
 DIR="__DIR__"
 INFINITELOOP=`echo $DIR/infinite.sh`
 LOGPATH='/var/log/coworking.log'
