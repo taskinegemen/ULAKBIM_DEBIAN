@@ -1,2 +1,2 @@
 #!/bin/bash          
-cd /var/lib/cef-64/;python zkitapeditoru.py 
+cd /var/lib/cef-64/;python zkitapeditoru.py&
