@@ -34,7 +34,8 @@ service cowork restart;
 architecture=`getconf LONG_BIT`;
 
 if [ "$architecture" == "32" ]; then
-	gdebi /tmp/CEF/cef3-32.deb;
+	cp /tmp/ZKITAPEDITORU/zkitapeditoru_32 /usr/bin/zkitapeditoru;
 else
-	gdebi /tmp/CEF/cef3-64.deb;
+	cp /tmp/ZKITAPEDITORU/zkitapeditoru_64 /usr/bin/zkitapeditoru;
 fi
+chmod 755 /usr/bin/zkitapeditoru
