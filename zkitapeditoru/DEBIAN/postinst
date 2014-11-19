@@ -35,7 +35,10 @@ architecture=`getconf LONG_BIT`;
 
 if [ "$architecture" == "32" ]; then
 	cp /tmp/ZKITAPEDITORU/zkitapeditoru_32 /usr/bin/zkitapeditoru;
+	chmod -R 777 /var/lib/cef-32/;
 else
 	cp /tmp/ZKITAPEDITORU/zkitapeditoru_64 /usr/bin/zkitapeditoru;
+	chmod -R 777 /var/lib/cef-64/;
 fi
+
 chmod 755 /usr/bin/zkitapeditoru
