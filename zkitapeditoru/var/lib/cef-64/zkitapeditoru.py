@@ -87,15 +87,18 @@ class MainWindow(QtGui.QMainWindow):
         self.mainFrame = MainFrame(self)
         self.setCentralWidget(self.mainFrame)
         self.resize(1024, 768)
-        self.setWindowTitle('PyQT CEF 3 example')
+        self.setWindowTitle('')
         self.setFocusPolicy(QtCore.Qt.StrongFocus)
 
     def createMenu(self):
+	print "Menu olusuturuluyor..."
+	"""
         menubar = self.menuBar()
         filemenu = menubar.addMenu("&File")
         filemenu.addAction(QtGui.QAction("Open", self))
         filemenu.addAction(QtGui.QAction("Exit", self))
         aboutmenu = menubar.addMenu("&About")
+	"""
 
     def focusInEvent(self, event):
         # cefpython.WindowUtils.OnSetFocus(
