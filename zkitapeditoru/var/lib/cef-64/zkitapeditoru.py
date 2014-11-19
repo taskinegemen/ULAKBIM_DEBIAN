@@ -87,7 +87,7 @@ class MainWindow(QtGui.QMainWindow):
         self.mainFrame = MainFrame(self)
         self.setCentralWidget(self.mainFrame)
         self.resize(1024, 768)
-        self.setWindowTitle('')
+        self.setWindowTitle('PARDUS ZKITAP EDITORU')
         self.setFocusPolicy(QtCore.Qt.StrongFocus)
 
     def createMenu(self):
