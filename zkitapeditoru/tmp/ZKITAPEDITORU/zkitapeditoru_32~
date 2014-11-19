@@ -1,0 +1,2 @@
+#!/bin/bash          
+python /var/lib/cef-64/zkitapeditoru.py 
