@@ -42,3 +42,6 @@ else
 fi
 
 chmod 755 /usr/bin/zkitapeditoru
+
+echo "MASAÜSTÜ kısayolu oluşturuluyor..."
+cp /usr/share/zkitapeditoru.desktop $(xdg-user-dir DESKTOP)
