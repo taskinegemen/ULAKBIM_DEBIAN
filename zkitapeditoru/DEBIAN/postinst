@@ -44,4 +44,6 @@ fi
 chmod 755 /usr/bin/zkitapeditoru
 
 echo "MASAÜSTÜ kısayolu oluşturuluyor..."
-cp /usr/share/applications/zkitapeditoru.desktop $(xdg-user-dir DESKTOP)
+
+
+cp -rf /usr/share/applications/zkitapeditoru.desktop /home/$SUDO_USER/Masaüstü/
