@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Version=1.0
-Name=ZKitap Editörü      
+Name=ZKitap Editörü
 GenericName=ULAKBIM ZKitap Editörü
 Comment=Zenginleştirilmiş Epub yayınları oluştur
 Exec=/usr/bin/zkitapeditoru   
