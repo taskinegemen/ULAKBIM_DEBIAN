@@ -45,6 +45,7 @@ chmod 755 /usr/bin/zkitapeditoru
 
 echo "MASAÜSTÜ kısayolu oluşturuluyor..."
 cp -rf /usr/share/applications/zkitapeditoru.desktop /home/$SUDO_USER/Masaüstü/
+chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/Masaüstü/zkitapeditoru.desktop
 
 echo "LEPUB formatı sisteme tanıtılıyor..."
 update-mime-database /usr/share/mime
