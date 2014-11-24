@@ -1,0 +1,7 @@
+Template: linden-mysql-server/root_password
+Type: password
+Description: "root" kullanıcısı için lütfen şifre giriniz:
+
+Template: linden-mysql-server/root_password_again
+Type: password
+Description: "root" kullanıcı için girdiğiniz şifreyi tekrar giriniz:
