@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "APACHE konfigürasyonları yapılandırılıyor...";
 a2enmod headers;
 a2enmod rewrite;
@@ -8,12 +9,9 @@ a2ensite zkitapeditoru_apache.conf;
 service apache2 reload;
 service apache2 restart;
 
-echo "MYSQL konfigürasyonları yapılandırılıyor..."
-mysql -u root -p</tmp/MYSQL/ulakbim_editor.sql 
-
 echo "NODEJS kuruluyor...";
 nodejs=`which node`;
-if ["$nodejs" == ""]; then
+if [ "$nodejs" == "" ]; then
 	cd /tmp/NODEJS/node-v0.10.33;
 	./configure > /dev/null;
 	make > /dev/null;
@@ -41,12 +39,12 @@ else
 	chmod -R 777 /var/lib/cef-64/;
 fi
 
-chmod 755 /usr/bin/zkitapeditoru
+chmod 755 /usr/bin/zkitapeditoru;
 
-echo "MASAÜSTÜ kısayolu oluşturuluyor..."
-cp -rf /usr/share/applications/zkitapeditoru.desktop /home/$SUDO_USER/Masaüstü/
-chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/Masaüstü/zkitapeditoru.desktop
+echo "MASAÜSTÜ kısayolu oluşturuluyor...";
+cp -rf /usr/share/applications/zkitapeditoru.desktop /home/$SUDO_USER/Masaüstü/;
+chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/Masaüstü/zkitapeditoru.desktop;
 
-echo "LEPUB formatı sisteme tanıtılıyor..."
-update-mime-database /usr/share/mime
+echo "LEPUB formatı sisteme tanıtılıyor...";
+update-mime-database /usr/share/mime;
 

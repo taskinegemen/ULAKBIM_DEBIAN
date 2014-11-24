@@ -27,7 +27,6 @@ echo "ikinci şifre:$second"
 
 if [ "$first" == "$second" ]; then
         mysql -u root -p$first</tmp/MYSQL/ulakbim_editor.sql;
-	echo "<?php \$db_config_list=array('other'=>array( 'connectionString' => 'mysql:host=localhost;port=3306;dbname=ulakbim_editor','emulatePrepare' => true,'username' => 'root','password' => '$first','charset' => 'utf8'));">/var/www/zkitapeditoru/protected/config/db_configuration.php;
 else
         echo "Girdiğiniz şifreler birbiri ile eşleşmiyor. Lütfen kurulumu tekrar başlatınız!"
 fi
