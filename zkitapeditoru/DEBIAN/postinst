@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sh /tmp/MYSQL/mysql.sh;
 echo "APACHE konfigürasyonları yapılandırılıyor...";
 a2enmod headers;
 a2enmod rewrite;
