@@ -1,6 +1,7 @@
 #!/bin/bash
 sh /tmp/MYSQL/mysql.sh;
 echo "APACHE konfigürasyonları yapılandırılıyor...";
+echo "export APACHE_RUN_USER=$SUDO_USER;export APACHE_RUN_GROUP=$SUDO_USER;" >> /etc/apache2/envvars
 a2enmod headers;
 a2enmod rewrite;
 cp /tmp/APACHE/zkitapeditoru_apache.conf /etc/apache2/sites-available/zkitapeditoru_apache.conf;
