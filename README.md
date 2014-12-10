@@ -47,4 +47,13 @@ xvfb(>=2:1.12),
 ghostscript(>=9.05),
 
 
+Kurulan paketler
+===============
+
+2013
+sudo apt-get update
+wkhtmltopdf.org/downloads.html sitesinden Linux (Debian Wheezy) sürümü indirilir.
+sudo dpkg -i <indirilen_dosya>
+
+
 
