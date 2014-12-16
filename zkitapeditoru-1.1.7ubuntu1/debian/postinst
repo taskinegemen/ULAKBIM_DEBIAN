@@ -11,6 +11,9 @@ a2ensite zkitapeditoru_apache.conf;
 service apache2 reload;
 service apache2 restart;
 
+chmod -R 777 /var/www/zkitapeditoru/serialized
+chmod -R 777 /var/www/zkitapeditoru/uploads
+
 architecture=`getconf LONG_BIT`;
 
 
