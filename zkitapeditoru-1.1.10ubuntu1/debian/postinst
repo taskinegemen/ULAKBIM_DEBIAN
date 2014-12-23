@@ -46,6 +46,12 @@ else
 	chmod -R 777 /var/lib/cef-64/;
 fi
 
+#libudev check for the ubuntu versions which is >=14.04
+if [ ! -f /lib/$(arch)-linux-gnu/libudev.so.0 ]; then
+	ln -sf /lib/$(arch)-linux-gnu/libudev.so.1 /lib/$(arch)-linux-gnu/libudev.so.0
+fi
+
+
 chmod 755 /usr/bin/zkitapeditoru;
 
 echo "MASAÜSTÜ kısayolu oluşturuluyor...";
