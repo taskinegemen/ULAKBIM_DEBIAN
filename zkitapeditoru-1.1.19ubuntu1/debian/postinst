@@ -14,6 +14,7 @@ service apache2 restart;
 chmod -R 777 /var/www/zkitapeditoru/serialized
 chmod -R 777 /var/www/zkitapeditoru/uploads
 chmod 777 /var/log/epubtopdf
+chown -R $SUDO_USER:$SUDO_USER /var/www/zkitapeditoru
 
 architecture=`getconf LONG_BIT`;
 
